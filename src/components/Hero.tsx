@@ -5,8 +5,8 @@ function Hero() {
     <div>
     
       {/* Main Content Section */}
-      <main className="flex flex-grow md:flex-row flex-col gap-9  items-center text-center mt-10 px-4 lg:px-24">
-      <div  className='w-[50%] flex flex-col items-start gap-9   '>
+      <main className="flex flex-grow md:flex-row flex-col gap-9   items-center text-center mt-10 px-4 lg:px-24">
+      <div  className='md:w-[50%] w-[90%] flex flex-col items-start gap-9   '>
       <div className="text-4xl   lg:text-5xl text-start   font-bold ">
           Empowering <span className="text-green-500">RURAL</span> Lives with{" "}
           <span className="text-green-500">HEALTH</span> and{" "}
@@ -22,7 +22,7 @@ function Hero() {
         
         
         {/* Background Image Replacement */}
-        <div className="mt-12 w-[50%]   h-96 bg-blue-500"></div>
+        <div className="mt-12 md:w-[50%] w-[90%]   h-96 bg-blue-500"></div>
       </main>
     </div>
   )
