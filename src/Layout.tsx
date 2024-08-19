@@ -2,7 +2,8 @@ import  { useState } from 'react'
 import { AppBar, Toolbar, IconButton, Drawer, List, ListItem, ListItemText, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-function Navbar() {
+import { Outlet } from 'react-router-dom';
+function Layout() {
 
     
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -19,6 +20,7 @@ function Navbar() {
   ];
   return (
     <div>
+    
       <header className=" md:flex hidden justify-between items-center p-5 px-[3%] bg-white shadow-md">
         <div className="text-green-500 text-xl font-bold">LOGO</div>
         <nav className="space-x-6">
@@ -85,8 +87,10 @@ function Navbar() {
           </List>
         </div>
       </Drawer>
+      <Outlet />
+
     </div>
   )
 }
 
-export default Navbar
+export default Layout
