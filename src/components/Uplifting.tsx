@@ -1,38 +1,4 @@
-// import React from 'react';
 
-// const UpliftingLives = () => {
-//   return (
-//     <section className="container mx-auto py-16 px-4 md:px-8 flex-5 flex-col md:flex-row items-center">
-//       <div className="relative  flex-3 justify-center bg-red-200 items-center mb-8 md:mb-0">
-//         {/* Circle Divs in place of images */}
-//         <div className="relative w-64 h-64 rounded-full bg-green-500">
-//           <div className="absolute -top-12 -left-16 w-32 h-32 rounded-full bg-green-500"></div>
-//           <div className="absolute top-4 right-4 w-24 h-24 rounded-full bg-green-500"></div>
-//           <div className="absolute bottom-6 left-12 w-16 h-16 rounded-full bg-green-500"></div>
-//         </div>
-//       </div>
-
-//       <div className="  flex- text-center md:text-left md:ml-8">
-//         <h2 className="text-4xl font-bold">
-//           UPLIFTING <span className="text-green-500">PEOPLE</span>
-//           <br />
-//           TRANSFORMING <span className="text-green-500">LIVES</span>
-//         </h2>
-//         <p className="mt-6 text-lg">
-//           At the Rabindranath Institute of Healthcare Management, we ensure everyone in remote areas gets vital healthcare, education, and social support. 
-//           We believe every individual should have basic healthcare facilities and access to education. 
-//           We aim to bring change and help people grow and shape a better future for them.
-//         </p>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default UpliftingLives;
-
-
-
-import React from 'react';
 
 const UpliftingLives = () => {
   return (
