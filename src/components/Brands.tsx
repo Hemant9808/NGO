@@ -11,14 +11,17 @@ const AnimatedLogoCloud = () => {
   ];
 
   return (
-    <section className="sm:w-[95%] w-[170px] mb-[3rem] flex items-center justify-center ">
-      <div className="  ">
-        <div className="mx-auto  px-4 md:px-8">
+    <section className="sm:w-[100%] w-[170px] mb-[3rem] flex items-center justify-center py-12 sm:px-8 lg:px-8">
+      <div className="sm:px-16">
+        <div className="mx-auto text-center">
+        <h2 className="text-4xl lg:text-7xl font-normal">
+          OUR <span className="text-green">Partners</span>
+        </h2>
           <div
-            className="group relative flex overflow-hidden"
+            className="mt-16 group relative flex overflow-hidden"
             style={{
               maskImage:
-                'linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 95%)',
+                'linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%)',
             }}
           >
             {Array(2) // Array(2) ensures a seamless loop by duplicating the logos

@@ -1,5 +1,4 @@
-
-import WhoWeAre from '../components/AboutUs.tsx'
+import AboutUs from '../components/AboutUs.tsx'
 import AnimatedLogoCloud from '../components/Brands.tsx'
 import Footer from '../components/Footer.tsx'
 import Hero from '../components/Hero.tsx'
@@ -12,7 +11,7 @@ function Home() {
   return (
     <div className='flex flex-col '>
        <Hero></Hero>
-       <WhoWeAre></WhoWeAre>
+       <AboutUs></AboutUs>
        <ImpactSummary></ImpactSummary>
        <UpliftingLives></UpliftingLives>
        <StoriesCarousel></StoriesCarousel>

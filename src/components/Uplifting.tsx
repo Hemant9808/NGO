@@ -6,20 +6,20 @@ const UpliftingLives = () => {
         <div className='w-[92%] py-16  md:px-8 flex flex-col md:flex-row items-center'>
       <div className="relative bg-green-300 min-h-[25rem] sm:h-[35rem] w-[100%] flex-[3] flex justify-center items-center mb-8 md:mb-0">
         {/* Circle Divs in place of images */}
-        {/* <div className="relative  w-64 h-64 rounded-full bg-green-500">
-          <div className="absolute -top-12 -left-16 w-32 h-32 rounded-full bg-green-500"></div>
-          <div className="absolute top-4 right-4 w-24 h-24 rounded-full bg-green-500"></div>
-          <div className="absolute bottom-6 left-12 w-16 h-16 rounded-full bg-green-500"></div>
+        {/* <div className="relative  w-64 h-64 rounded-full bg-green">
+          <div className="absolute -top-12 -left-16 w-32 h-32 rounded-full bg-green"></div>
+          <div className="absolute top-4 right-4 w-24 h-24 rounded-full bg-green"></div>
+          <div className="absolute bottom-6 left-12 w-16 h-16 rounded-full bg-green"></div>
         </div> */}
       </div>
 
       <div className="flex-[2] text-center md:text-left md:ml-8">
-        <h2 className="text-4xl font-bold">
-          UPLIFTING <span className="text-green-500">PEOPLE</span>
+        <h2 className="text-4xl lg:text-7xl font-normal">
+          UPLIFTING <span className="text-green">PEOPLE</span>
           <br />
-          TRANSFORMING <span className="text-green-500">LIVES</span>
+          TRANSFORMING <span className="text-green">LIVES</span>
         </h2>
-        <p className="mt-6 text-lg">
+        <p className="mt-6 text-xl">
           At the Rabindranath Institute of Healthcare Management, we ensure everyone in remote areas gets vital healthcare, education, and social support. 
           We believe every individual should have basic healthcare facilities and access to education. 
           We aim to bring change and help people grow and shape a better future for them.
