@@ -21,8 +21,8 @@ const Layout = () => {
   return (
     <>
       {/* Navbar for Desktop */}
-      <header className="md:flex hidden justify-between items-center p-5 px-[3%] bg-white shadow-md">
-        <div className="text-green text-xl font-bold">LOGO</div>
+      <header className="md:flex hidden justify-between items-center py-5 px-[3%] bg-white shadow-md">
+        <div className="logo-image"><img src="../assets/logo.png" alt="logo" className="w-[70%]"/></div>
         <nav className="space-x-7 text-xl tracking-wider">
           {menuItems.map((item) => (
             <Link key={item.text} to={item.href} className="text-black hover:text-green">
@@ -30,7 +30,7 @@ const Layout = () => {
             </Link>
           ))}
         </nav>
-        <Link to="/donate" className="text-xl bg-green text-white hover:text-green px-10 py-2 rounded-lg border-2 border-green hover:bg-white hover:border-2 hover:border-green">
+        <Link to="/donate" className="text-xl bg-green text-white hover:text-green px-10 py-2 rounded-lg border-2 border-green hover:bg-white hover:border-2 hover:border-green tracking-wider  ">
           DONATE
         </Link>
       </header>

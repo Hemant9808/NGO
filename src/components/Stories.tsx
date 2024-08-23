@@ -31,7 +31,7 @@ const StoriesCarousel = () => {
     <div className="bg-white w-[100%] py-12 sm:px-8 lg:px-8">
       <div className="sm:px-16">
         <div className=" mx-auto text-center">
-          <h2 className="text-4xl lg:text-7xl font-normal">
+          <h2 className="text-5xl lg:text-7xl font-normal">
             OUR <span className="text-green">STORIES</span>
           </h2>
           <div className="mt-16 relative">

@@ -14,6 +14,7 @@ const UpliftingLives = () => {
       </div>
 
       <div className="flex-[2] text-center md:text-left md:ml-8">
+        <div className="border-4 border-green rounded w-1/4 mb-8"></div>
         <h2 className="text-4xl lg:text-7xl font-normal">
           UPLIFTING <span className="text-green">PEOPLE</span>
           <br />

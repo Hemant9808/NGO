@@ -11,10 +11,10 @@ const AnimatedLogoCloud = () => {
   ];
 
   return (
-    <section className="sm:w-[100%] w-[170px] mb-[3rem] flex items-center justify-center py-12 sm:px-8 lg:px-8">
+    <section className="sm:w-[100%] w-[170px] mb-12 flex items-center justify-center py-12 sm:px-8 lg:px-8">
       <div className="sm:px-16">
         <div className="mx-auto text-center">
-        <h2 className="text-4xl lg:text-7xl font-normal">
+        <h2 className="text-5xl lg:text-7xl font-normal">
           OUR <span className="text-green">Partners</span>
         </h2>
           <div

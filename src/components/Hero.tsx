@@ -1,11 +1,14 @@
+// import Layout from "./Layout"; 
+
 function Hero() {
   return (
     <div>
+      {/* <Layout /> */}
       {/* Main Content Section */}
-      <main className="flex flex-grow md:flex-row flex-col gap-9 items-center text-center mt-10 px-4 lg:px-24 h-[90%]" style={{backgroundImage: `url("../assets/main_bg.png")`,
+      <main className="flex flex-grow md:flex-row flex-col gap-9 items-center text-center mt-10 px-4 lg:px-24 min-h-[85vh]" style={{backgroundImage: `url("../assets/background.png")`,
       }}>
         <div className="md:w-[50%] w-[90%] flex flex-col items-start gap-9">
-          <div className="text-4xl lg:text-7xl text-start font-normal">
+          <div className="text-5xl lg:text-7xl text-start font-normal">
             <h1>Empowering <span className="text-green">RURAL</span> Lives with{" "}
             <span className="text-green">HEALTH</span> and{" "}
             <span className="text-green">EDUCATION</span></h1>
@@ -20,7 +23,7 @@ function Hero() {
         </div>
 
         {/* Background Image Replacement */}
-        <div className="mt-12 md:w-[50%] w-[90%] h-96">
+        <div className="md:w-[50%] w-[90%]">
           <img className="" src="../assets/hero.png" alt="hero" />
         </div>
       </main>

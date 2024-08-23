@@ -1,13 +1,13 @@
 const Footer = () => {
   return (
-    <footer className="bg-green sm:px-[6rem] flex flex-col gap-9 text-white py-10">
+    <footer className="bg-green sm:px-[6rem] flex flex-col gap-9 text-white pt-10 pb-4">
       <div className="container mx-auto px-4 md:flex md:justify-between">
         <div className="mb-8 md:mb-0">
-          <h2 className="text-4xl font-bold mb-4 md:mb-8">LOGO</h2>
+          <h2 className="logo-image mb-4 md:mb-8"><img src="../assets/logo_white.png" alt="logo" className=""/></h2>
           <p className="text-xl mb-4 md:mb-12 font-medium">
             Empowering Rural Lives with Health<br /> and Education
           </p>
-          <button className="text-xl bg-white text-green font-semibold py-2 px-4 rounded-[0.5rem]">
+          <button className="text-xl bg-white text-green py-2 px-10 rounded-[0.5rem] tracking-wider" style={{fontFamily: 'Bebas Neue'}}>
             DONATE
           </button>
         </div>
