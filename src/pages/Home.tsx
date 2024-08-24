@@ -9,17 +9,17 @@ import UpliftingLives from '../components/Uplifting.tsx'
 
 function Home() {
   return (
-    <div className='flex flex-col '>
-       <Hero></Hero>
-       <AboutUs></AboutUs>
-       <ImpactSummary></ImpactSummary>
-       <UpliftingLives></UpliftingLives>
-       <StoriesCarousel></StoriesCarousel>
-       <AnimatedLogoCloud></AnimatedLogoCloud>
-       <CardSlider></CardSlider>
-       <Footer></Footer>
+    <div className='flex flex-col'>
+       <Hero />
+       <AboutUs />
+       <ImpactSummary />
+       <UpliftingLives />
+       <StoriesCarousel />
+       <AnimatedLogoCloud />
+       <CardSlider />
+       <Footer />
     </div>
   )
 }
 
-export default Home
+export default Home;

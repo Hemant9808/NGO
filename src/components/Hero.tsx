@@ -5,7 +5,13 @@ function Hero() {
     <div>
       {/* <Layout /> */}
       {/* Main Content Section */}
-      <main className="flex flex-grow md:flex-row flex-col gap-9 items-center text-center mt-10 px-4 lg:px-24 min-h-[85vh]" style={{backgroundImage: `url("../assets/background.png")`,
+      <main className="flex flex-grow md:flex-row flex-col gap-9 items-center text-center mt-10 px-4 lg:px-24"
+      style={{
+        backgroundImage: `url("../assets/background.png")`,
+        backgroundSize: 'cover', // Ensures the background covers the entire container
+        backgroundPosition: 'center', // Centers the background image
+        backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+        minHeight: '100vh',
       }}>
         <div className="md:w-[50%] w-[90%] flex flex-col items-start gap-9">
           <div className="text-5xl lg:text-7xl text-start font-normal">

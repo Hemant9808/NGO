@@ -1,11 +1,11 @@
-
+import Footer from '../components/Footer.tsx';
 
 function Contact() {
   return (
-    <div>
-      Contact page
+    <div className="flex flex-col">
+      <Footer />
     </div>
   )
 }
 
-export default Contact
+export default Contact;
