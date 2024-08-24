@@ -5,7 +5,7 @@ function Team() {
   return (
     <div>
       <OurTeam />
-      <Footer />
+      
     </div>
   )
 }

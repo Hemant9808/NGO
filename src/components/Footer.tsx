@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-green sm:px-[6rem] flex flex-col gap-9 text-white pt-10 pb-4">
@@ -8,7 +10,9 @@ const Footer = () => {
             Empowering Rural Lives with Health<br /> and Education
           </p>
           <button className="text-xl bg-white text-green py-2 px-10 rounded-[0.5rem] tracking-wider" style={{fontFamily: 'Bebas Neue'}}>
-            DONATE
+          <Link to="/donate" >
+          DONATE
+        </Link>
           </button>
         </div>
         <div className="flex gap-[12rem]">

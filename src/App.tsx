@@ -5,6 +5,7 @@ import Home from "./pages/Home.tsx";
 import Team from "./pages/Team.tsx";
 import Campaigns from "./pages/Campaigns.tsx";
 import Contact from "./pages/Contact.tsx";
+import DonationForm from "./components/Donation.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="team" element={<Team />} />
           <Route path="campaigns" element={<Campaigns />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="donate" element={<DonationForm />} />
         </Route>
       </Routes>
     </Router>

@@ -17,7 +17,7 @@ function Home() {
        <StoriesCarousel />
        <AnimatedLogoCloud />
        <CardSlider />
-       <Footer />
+      
     </div>
   )
 }
