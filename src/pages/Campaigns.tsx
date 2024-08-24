@@ -1,4 +1,4 @@
-import Footer from '../components/Footer.tsx';
+
 import OurCampaigns from '../components/OurCampaigns.tsx';
 import OurCampaignsBlog from '../components/OurCampaignsBlog.tsx';
 

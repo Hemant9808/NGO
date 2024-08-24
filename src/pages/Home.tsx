@@ -1,6 +1,6 @@
 import AboutUs from '../components/AboutUs.tsx'
 import AnimatedLogoCloud from '../components/Brands.tsx'
-import Footer from '../components/Footer.tsx'
+
 import Hero from '../components/Hero.tsx'
 import ImpactSummary from '../components/Statistics.tsx'
 import StoriesCarousel from '../components/Stories.tsx'
