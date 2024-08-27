@@ -3,7 +3,6 @@ import { AppBar, Drawer, IconButton, List, ListItem, ListItemText, Toolbar } fro
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from 'react';
-import Footer from './Footer';
 
 const Layout = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -22,7 +21,7 @@ const Layout = () => {
   return (
     <>
       {/* Navbar for Desktop */}
-      <header className="md:flex w-[100%] hidden justify-between items-center py-5 px-[3%] bg-white shadow-md">
+      <header className="md:flex hidden justify-between items-center py-5 px-[3%]">
         <div className="logo-image"><img src="../assets/logo.png" alt="logo" className="w-[70%]"/></div>
         <nav className="space-x-7 text-xl tracking-wider">
           {menuItems.map((item) => (
@@ -76,7 +75,6 @@ const Layout = () => {
 
       {/* Render the child routes */}
       <Outlet />
-      <Footer></Footer>
     </>
   );
 };

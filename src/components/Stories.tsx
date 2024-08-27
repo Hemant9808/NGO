@@ -4,12 +4,12 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const StoriesCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const stories = [
-    { id: 1, content: "Story 1" },
-    { id: 2, content: "Story 2" },
-    { id: 3, content: "Story 3" },
-    { id: 4, content: "Story 4" },
-    { id: 5, content: "Story 5" },
-    { id: 6, content: "Story 6" },
+    { id: 1, content: "Story 1", src: "../assets/story_1.png" },
+    { id: 2, content: "Story 2", src: "../assets/story_2.png" },
+    { id: 3, content: "Story 3", src: "../assets/story_3.png" },
+    { id: 4, content: "Story 4", src: "../assets/story_1.png" },
+    { id: 5, content: "Story 5", src: "../assets/story_2.png" },
+    { id: 6, content: "Story 6", src: "../assets/story_3.png" },
   ];
 
   const slideLength = 3; // Number of items shown in one slide
@@ -47,9 +47,9 @@ const StoriesCarousel = () => {
                 {stories.map((story) => (
                   <div
                     key={story.id}
-                    className="flex-shrink-0 w-full sm:w-1/3 h-80 sm:h-80 lg:h-96 bg-green mx-2"
+                    className="flex-shrink-0 w-full sm:w-1/3 h-80 sm:h-80 lg:h-[30rem] bg-green mx-2"
                   >
-                    {/* Add your story content here */}
+                    <img src={story.src} alt={story.content} className="w-full lg:h-[30rem] object-cover" / >
                   </div>
                 ))}
               </div>

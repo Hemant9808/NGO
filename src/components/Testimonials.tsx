@@ -28,7 +28,7 @@ const StoriesCarousel = () => {
   };
 
   return (
-    <div className="bg-white w-[100%] py-12 sm:px-8 lg:px-8 mb-12">
+    <div className="bg-white w-[100%] py-12 sm:px-8 mb-12">
       <div className="sm:px-[4rem]">
         <div className=" mx-auto text-center">
           <h2 className="text-5xl lg:text-7xl font-normal text-black">
@@ -47,7 +47,7 @@ const StoriesCarousel = () => {
                 {stories.map((story) => (
                   <div
                     key={story.id}
-                    className="flex-shrink-0 w-[100%] sm:w-1/3 sm:min-w-[24rem] h-40 sm:h-40 lg:h-60 rounded-[1rem] bg-[#363636] hover:bg-[#D9D9D9] text-white hover:text-black mx-2 p-8"
+                    className="flex-shrink-0 w-[90%] sm:w-1/3 sm:min-w-[24rem] h-48 lg:h-60 p-4 lg:p-8 rounded-[1rem] bg-[#363636] hover:bg-[#D9D9D9] text-white hover:text-black mx-2"
                   >
                     <div className="flex gap-4">
                       <div className="w-[4rem] h-[4rem] rounded-full bg-gray-400">

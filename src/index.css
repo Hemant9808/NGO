@@ -20,10 +20,10 @@ body {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-p {
+p, input, textarea {
   font-family: 'Montserrat', sans-serif;
 }
 
-footer {
+footer, .donateus {
   font-family: 'poppins', sans-serif;
 }  

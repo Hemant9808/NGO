@@ -11,7 +11,7 @@ const AnimatedLogoCloud = () => {
   ];
 
   return (
-    <section className="sm:w-[100%] w-[170px] mb-12 flex items-center justify-center py-12 sm:px-8 lg:px-8">
+    <section className="w-[100%] mb-12 flex items-center justify-center py-12 sm:px-8 lg:px-8">
       <div className="sm:px-16">
         <div className="mx-auto text-center">
         <h2 className="text-5xl lg:text-7xl font-normal">

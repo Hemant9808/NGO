@@ -1,10 +1,10 @@
-import ContactUs from '../components/ContactUs.tsx';
-import Footer from '../components/Footer.tsx';
+import DonateUs from "../components/DonateUs";
+import Footer from "../components/Footer";
 
 function Contact() {
   return (
     <div className="flex flex-col">
-      <ContactUs />
+      <DonateUs />
       <Footer />
     </div>
   )
