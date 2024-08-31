@@ -1,6 +1,6 @@
 
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "slick-carousel/slick/slick.css"; 
@@ -9,7 +9,6 @@ import Slider from "react-slick";
 
 
 const StoriesCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const stories = [
     { id: 1, content: "Story 1" },
     { id: 2, content: "Story 2" },
@@ -19,8 +18,6 @@ const StoriesCarousel = () => {
     { id: 6, content: "Story 6" },
   ];
 
-  const slideLength = 3; // Number of items shown in one slide
-  const totalSlides = stories.length;
 
 
 
