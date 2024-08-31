@@ -67,7 +67,7 @@ const Layout = () => {
               </ListItem>
             ))}
             <ListItem button component={Link} to="/donate" onClick={toggleDrawer(false)}>
-              <ListItemText primary="DONATE" className="text-green" />
+              <button className='text-xl bg-green text-white hover:text-green px-6 py-1 mt-4 rounded-lg border-2 border-green hover:bg-white hover:border-2 hover:border-green tracking-wider'><ListItemText primary="DONATE" /></button>
             </ListItem>
           </List>
         </div>
