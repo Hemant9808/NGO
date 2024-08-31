@@ -2,10 +2,10 @@
 
 function Hero() {
   return (
-    <div>
+    <div className="mt-[3rem]">
       {/* <Layout /> */}
       {/* Main Content Section */}
-      <main className="flex flex-grow md:flex-row flex-col gap-9 items-center text-center mt-10 px-4 lg:px-24"
+      <main className="flex flex-grow md:flex-row flex-col gap-9  items-center  overflow-hidden text-center px-4 lg:px-24"
       style={{
         backgroundImage: `url("../assets/background.png")`,
         backgroundSize: 'cover', // Ensures the background covers the entire container

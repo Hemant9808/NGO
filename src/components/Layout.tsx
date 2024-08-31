@@ -21,7 +21,7 @@ const Layout = () => {
   return (
     <>
       {/* Navbar for Desktop */}
-      <header className="md:flex hidden justify-between items-center py-5 px-[3%]">
+      <header className="md:flex w-[100%] fixed z-[100] bg-white shadow-md hidden justify-between items-center py-5 px-[3%]  ">
         <div className="logo-image"><img src="../assets/logo.png" alt="logo" className="w-[70%]"/></div>
         <nav className="space-x-7 text-xl tracking-wider">
           {menuItems.map((item) => (

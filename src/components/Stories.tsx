@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 const StoriesCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+ 
   const stories = [
     { id: 1, content: "Story 1", src: "../assets/story_1.png" },
     { id: 2, content: "Story 2", src: "../assets/story_2.png" },
@@ -12,58 +15,80 @@ const StoriesCarousel = () => {
     { id: 6, content: "Story 6", src: "../assets/story_3.png" },
   ];
 
-  const slideLength = 3; // Number of items shown in one slide
-  const totalSlides = stories.length;
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? totalSlides - slideLength : prevIndex - 1
-    );
+  const sliderRef = useRef<Slider | null>(null); 
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows:false,
+    responsive: [
+      {
+        breakpoint: 1024, // For large screens
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768, // For tablets
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 640, // For mobile devices
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex >= totalSlides - slideLength ? 0 : prevIndex + 1
-    );
+  const handlePrev = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
   };
 
+  const handleNext = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+ 
   return (
     <div className="bg-white w-[100%] py-12 sm:px-8 lg:px-8">
-      <div className="sm:px-16">
+      <div className="sm:px-4">
         <div className=" mx-auto text-center">
           <h2 className="text-5xl lg:text-7xl font-normal">
             OUR <span className="text-green">STORIES</span>
           </h2>
           <div className="mt-16 relative">
-            <div className="flex overflow-hidden">
-              <div
-                className="flex w-[100%]  transition-transform duration-500 ease-in-out"
-                style={{
-                  transform: `translateX(-${
-                    currentIndex * (100 / slideLength)
-                  }%)`,
-                }}
-              >
-                {stories.map((story) => (
+          <Slider ref={sliderRef} {...settings}>
+        {stories.map((story) => (
                   <div
                     key={story.id}
-                    className="flex-shrink-0 w-full sm:w-1/3 h-80 sm:h-80 lg:h-[30rem] bg-green mx-2"
+                    className="flex-shrink-0 w-full sm:w-1/3   mx-2"
                   >
-                    <img src={story.src} alt={story.content} className="w-full lg:h-[30rem] object-cover" / >
+                    <img src={story.src} alt={story.content} className="w-full lg:h-[30rem] h-full object-cover" / >
                   </div>
                 ))}
-              </div>
-            </div>
+        </Slider>
+           
 
-            <div className=" inset-x-0 bottom-0 flex justify-center gap-4 items-center p-4">
+            <div className=" inset-x-0 bottom-0 mt-4 flex justify-center gap-4 items-center p-4">
               <button
-                onClick={prevSlide}
+                onClick={handlePrev}
                 className="text-stone-900 hover:text-gray-800"
               >
                 <ArrowBackIosIcon fontSize="large" />
               </button>
               <button
-                onClick={nextSlide}
+                onClick={handleNext}
                 className="text-stone-900 hover:text-gray-800"
               >
                 <ArrowForwardIosIcon fontSize="large" />
