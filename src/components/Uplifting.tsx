@@ -1,7 +1,7 @@
 const UpliftingLives = () => {
   return (
     <section className=" w-[100%] flex justify-center bg-[#F5F5F5]">
-      <div className="w-[92%] py-16 md:px-8 flex flex-col lg:flex-row items-center">
+      <div className="w-[92%] pb-16 sm:py-16 md:px-8 flex flex-col lg:flex-row items-center">
         <div 
           className="relative bg-green-300 min-h-[25rem] sm:h-[35rem] w-[100%] flex-[3] flex justify-center items-center mb-8 md:mb-0"
           >

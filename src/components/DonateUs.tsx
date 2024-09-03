@@ -1,7 +1,7 @@
 function DonateUs() {
   return (
     <div
-      className="donateus min-h-[85vh] m-12 text-center"
+      className="donateus min-h-[85vh] mx-6 my-10 sm:m-12 text-center"
       style={{
         backgroundImage: `url("../assets/background.png")`,
         backgroundSize: "cover", // Ensures the background covers the entire container
@@ -50,7 +50,7 @@ function DonateUs() {
       </div>
 
       {/* Card Details */}
-      <div className="flex flex-col lg:flex-row justify-center items-center bg-[#EBEBEB] mx-auto p-8 shadow-md rounded">
+      <div className="flex flex-col lg:flex-row justify-center items-center bg-[#EBEBEB] mx-auto p-4 sm:p-8 shadow-md rounded">
         {/* Left */}
         <div className="lg:w-1/2 text-left">
           <h1 className="text-2xl font-semibold">Card Details</h1>
@@ -91,7 +91,7 @@ function DonateUs() {
 
         {/* Right */}
         <div className="lg:w-1/2 text-left mt-5 lg:mt-0">
-          <div className="w-[80%] md:gap-[18rem]">
+          <div className="lg:w-[80%] md:gap-[18rem]">
           <div>
             <h1 className="text-2xl font-semibold">Enter your Email Address</h1>
             <p className="text-sm text-[#888888] uppercase">(Required)</p>
@@ -110,7 +110,7 @@ function DonateUs() {
           
           <div className="flex flex-col items-start mt-2 mb-8">
             <h1 className="text-xl md:text-3xl font-semibold">Gift Card</h1>
-            <div className="flex items-center my-3">
+            <div className="flex my-3 sm:w-96">
             <input type="checkbox" id="giftCard" className="h-5 w-5" />
             <label htmlFor="giftCard" className="ml-2 text-lg text-[#8B8B8B]">
               Gift with a purpose—send a gift card along with a donation to make

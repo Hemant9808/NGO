@@ -1,8 +1,8 @@
 const AboutUs = () => {
   return (
-    <section className="w-[100%] flex justify-center pt-16 pb-28 lg:py-28 bg-[#F5F5F5]">
+    <section className="w-[100%] flex justify-center pt-16 sm:pb-28 lg:py-28 bg-[#F5F5F5]">
       <div>
-        <div className="sm:px-[5rem] px-[2rem] flex flex-col items-center">
+        <div className="px-4 sm:px-20 flex flex-col items-center">
           <div className="text-center mb-24">
             <h2 className="text-5xl lg:text-7xl font-normal">
               WHO ARE <span className="text-green">WE?</span>
@@ -47,23 +47,23 @@ const AboutUs = () => {
                         alt="about"
                         className="mb-2 lg:mb-4 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
                       />
-                      <h1 className="text-2xl sm:mb-2 lg:mb-8 xl:mb-0 2xl:mb-4">
+                      <h1 className="text-xl sm:text-2xl sm:mb-2 lg:mb-8 xl:mb-0 2xl:mb-4">
                         Enhancing Healthcare Access in Remote Areas
                       </h1>
-                      <p className="mb-2 sm:mb-10 lg:mb-16 text-justify">
+                      <p className="text-sm sm:text-base mb-2 sm:mb-10 lg:mb-16 text-justify">
                         we are dedicated to improving healthcare access in
                         remote communities. By setting up mobile clinics and
                         training local health workers, we ensure that even the
                         most isolated populations receive essential medical care
                       </p>
                       <button className="text-green border border-green rounded-2xl py-2 w-[100px]">
-                        <p>View</p>
+                        <p className="text-sm sm:text-base ">View</p>
                       </button>
                     </div>
                   </div>
 
                   {/* About Us 2 */}
-                  <div className="w-full h-[35vh] sm:h-[30vh]">
+                  <div className="w-full h-[25vh] sm:h-[30vh]">
                     <img
                       src="../assets/aboutus_2.png"
                       alt="about"
@@ -73,10 +73,10 @@ const AboutUs = () => {
                 </div>
 
 
-                <div className="flex-1 mt-[4rem] sm:min-w-[400px] min-w-[300px] flex flex-col h-screen sm:h-auto">
+                <div className="flex-1 sm:mt-8 md:mt-16 sm:min-w-[400px] min-w-[300px] flex flex-col h-screen sm:h-auto">
 
                   {/* About Us 3 */}
-                  <div className="w-full h-[35vh] sm:h-[30vh] mb-12">
+                  <div className="w-full h-[25vh] sm:h-[30vh] mb-12">
                     <img
                       src="../assets/aboutus_3.png"
                       alt="about"
@@ -86,10 +86,10 @@ const AboutUs = () => {
 
                   {/* About Us 4 */}
                   <div className="flex flex-col items-center justify-center bg-green w-full h-[60vh] sm:h-[60vh]">
-                    <h1 className="text-2xl text-white mb-4 sm:mb-6 lg:mb-12">
+                    <h1 className="text-xl sm:text-2xl text-white mb-4 sm:mb-6 lg:mb-12">
                       Empowering Minds Through Education
                     </h1>
-                    <p className="text-white mb-8 md:mb-12 lg:mb-20 px-20 text-justify">
+                    <p className="text-sm sm:text-base text-white mb-8 md:mb-12 lg:mb-20 px-12 sm:px-20 text-justify">
                       We believe that education is the foundation for a better
                       future. Our initiatives focus on providing educational
                       resources and training to underserved areas, helping
@@ -98,7 +98,7 @@ const AboutUs = () => {
                       sustainable development and brighter futures for all.
                     </p>
                     <button className="text-white border border-white rounded-2xl py-2 w-[100px]">
-                      <p>View</p>
+                      <p className="text-sm sm:text-base ">View</p>
                     </button>
                   </div>
                 </div>
