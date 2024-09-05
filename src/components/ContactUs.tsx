@@ -8,6 +8,7 @@ function ContactUs() {
           backgroundRepeat: "no-repeat", // Prevents the image from repeating
         }}
       >
+        
         <div className="sm:px-10 w-full lg:w-3/5">
           <h1 className="text-5xl md:text-6xl lg:text-7xl pt-12 pb-4 text-center lg:text-left">
             Join Us in Making a <span className="text-green">Difference</span>
