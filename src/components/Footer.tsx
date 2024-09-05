@@ -6,10 +6,10 @@ const Footer = () => {
       <div className="container flex flex-col md:flex-row mx-auto px-4 md:flex md:justify-between md:gap-5">
         <div className="flex flex-row sm:flex-col mb-8 md:mb-0">
           <div>
-            <h2 className="logo-image mb-4 md:mb-8">
-              <img src="../assets/logo_white.png" alt="logo" className="" />
+            <h2 className="logo-image mb-4 md:mb-2">
+            <img src="src/assets/logo.png"  className="h-[8rem] p-" />
             </h2>
-            <p className="text-lg md:text-xl mb-4 md:mb-12 font-medium">
+            <p className="text-lg md:text-xl mb-4 md:mb-8 font-medium">
               Empowering Rural Lives with Health and Education
             </p>
           </div>

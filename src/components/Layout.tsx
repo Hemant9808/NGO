@@ -1,13 +1,21 @@
-import { Outlet, Link } from 'react-router-dom';
-import { AppBar, Drawer, IconButton, List, ListItem, ListItemText, Toolbar } from '@mui/material';
+import { Outlet, Link } from "react-router-dom";
+import {
+  AppBar,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+  Toolbar,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState } from 'react';
+import { useState } from "react";
 
 const Layout = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const toggleDrawer = (open:boolean) => () => {
+  const toggleDrawer = (open: boolean) => () => {
     setDrawerOpen(open);
   };
 
@@ -21,31 +29,44 @@ const Layout = () => {
   return (
     <>
       {/* Navbar for Desktop */}
-      <header className="md:flex w-[100%] fixed z-[100] bg-white shadow-md hidden justify-between items-center py-5 px-[3%]  ">
-        <div className="logo-image"><img src="../assets/logo.png" alt="logo" className="w-[70%]"/></div>
+      <header className="md:flex w-[100%] fixed z-[100] bg-white shadow-md hidden justify-between items-center px-[3%]  ">
+        <div className="logo-image">
+          <img src="src/assets/logo.png"  className="w-[100%] h-[4rem] p-1" />
+        </div>
         <nav className="space-x-7 text-xl tracking-wider">
           {menuItems.map((item) => (
-            <Link key={item.text} to={item.href} className="text-black hover:text-green">
+            <Link
+              key={item.text}
+              to={item.href}
+              className="text-black hover:text-green"
+            >
               {item.text}
             </Link>
           ))}
         </nav>
-        <Link to="/donate" className="text-xl bg-green text-white hover:text-green px-10 py-2 rounded-lg border-2 border-green hover:bg-white hover:border-2 hover:border-green tracking-wider  ">
+        <Link
+          to="/donate"
+          className="text-xl bg-green text-white hover:text-green px-10 py-2 rounded-lg border-2 border-green hover:bg-white hover:border-2 hover:border-green tracking-wider  "
+        >
           DONATE
         </Link>
       </header>
 
       {/* Navbar for Mobile */}
-      <div className='md:hidden block'>
-        <AppBar position="static" style={{ backgroundColor: 'white' }} className="bg-white shadow-md">
+      <div className="md:hidden block">
+        <AppBar
+          position="static"
+          style={{ backgroundColor: "white" }}
+          className="bg-white shadow-md"
+        >
           <Toolbar className="flex justify-between">
-            <div className="text-green text-lg md:text-xl font-bold">LOGO</div>
+          <img src="src/assets/logo.png"  className="h-[3.3rem] p-1" />
             <IconButton
               edge="end"
               color="inherit"
               aria-label="menu"
               className="md:hidden"
-              sx={{ color: 'green' }}
+              sx={{ color: "green" }}
               onClick={toggleDrawer(true)}
             >
               <MenuIcon />
@@ -62,12 +83,25 @@ const Layout = () => {
           </IconButton>
           <List>
             {menuItems.map((item) => (
-              <ListItem button key={item.text} component={Link} to={item.href} onClick={toggleDrawer(false)}>
+              <ListItem
+                button
+                key={item.text}
+                component={Link}
+                to={item.href}
+                onClick={toggleDrawer(false)}
+              >
                 <ListItemText primary={item.text} />
               </ListItem>
             ))}
-            <ListItem button component={Link} to="/donate" onClick={toggleDrawer(false)}>
-              <button className='text-xl bg-green text-white hover:text-green px-6 py-1 mt-4 rounded-lg border-2 border-green hover:bg-white hover:border-2 hover:border-green tracking-wider'><ListItemText primary="DONATE" /></button>
+            <ListItem
+              button
+              component={Link}
+              to="/donate"
+              onClick={toggleDrawer(false)}
+            >
+              <button className="text-xl bg-green text-white hover:text-green px-6 py-1 mt-4 rounded-lg border-2 border-green hover:bg-white hover:border-2 hover:border-green tracking-wider">
+                <ListItemText primary="DONATE" />
+              </button>
             </ListItem>
           </List>
         </div>
