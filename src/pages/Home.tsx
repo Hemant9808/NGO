@@ -17,8 +17,9 @@ function Home() {
        <UpliftingLives />
        <StoriesCarousel />
     
-      <AnimatedLogoCloud/>
+      
        <CardSlider />
+       <AnimatedLogoCloud/>
       
        <Footer />
     </div>

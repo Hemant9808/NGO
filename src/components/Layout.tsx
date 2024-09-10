@@ -60,7 +60,7 @@ const Layout = () => {
           className="bg-white shadow-md"
         >
           <Toolbar className="flex justify-between">
-          <img src="src/assets/logo.png"  className="h-[3.3rem] p-1" />
+          <img src="../assets/logo.png"  className="h-[3.3rem] p-1" />
             <IconButton
               edge="end"
               color="inherit"
