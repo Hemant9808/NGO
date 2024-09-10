@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.tsx"; // Import the Layout component
 import Home from "./pages/Home.tsx";
-import Team from "./pages/Team.tsx";
+// import Team from "./pages/Team.tsx";
 import Campaigns from "./pages/Campaigns.tsx";
 import Contact from "./pages/Contact.tsx";
 import Donate from "./pages/Donate.tsx";
