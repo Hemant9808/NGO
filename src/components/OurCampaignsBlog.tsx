@@ -53,13 +53,13 @@ import axios, { AxiosResponse } from 'axios';
 
 
 
-type BlogPost = {
-  _id: string;
-  title: string;
-  description: string;
-  imageUrl?: string;
-  createdAt : string ;
-};
+// type BlogPost = {
+//   _id: string;
+//   title: string;
+//   description: string;
+//   imageUrl?: string;
+//   createdAt : string ;
+// };
 
 const inputClasses = 'pl-10 pr-4 py-3 shadow-md text-md rounded-lg';
 const hrClasses = 'flex-1 border-zinc-300';
@@ -69,7 +69,7 @@ const Blog = () => {
   const shouldAnimate = window.innerWidth <= 768;
 
   
-  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [blogPosts, setBlogPosts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
@@ -78,8 +78,8 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogPosts = async () => {
       try {
-        const response: AxiosResponse<BlogPost[]> = await axios.get('https://ngo-backend-u2dt.onrender.com/getAllPost');
-        setBlogPosts(response.data.sort((a:BlogPost, b:BlogPost) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()));
+        const response: AxiosResponse<any> = await axios.get('https://ngo-backend-u2dt.onrender.com/getAllPost');
+        setBlogPosts(response.data.sort((a:any, b:any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()));
       } catch (error) {
         console.error('Error fetching blog posts:', error);
       } finally {
@@ -116,6 +116,7 @@ const Blog = () => {
   if (!blogPosts.length) {
     return <div>No posts found</div>;
   }
+  
 
   return (
     <div className="relative w-screen  flex justify-center shadow-md " >
@@ -148,7 +149,7 @@ const Blog = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          {paginatedPosts.map((post: BlogPost) => (
+          {paginatedPosts.map((post: any) => (
             <div key={post._id} className="flex flex-col md:flex-row gap-6">
               <div className="flex-shrink-0 md:w-2/5">
                 <Link to={`/blogpost/${post._id}`}>

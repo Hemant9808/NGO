@@ -91,6 +91,13 @@ useEffect(()=>{
   fetchEvents();
 },[])
 
+const truncateText = (text: string, maxLength: number) => {
+  if (text.length > maxLength) {
+    return text.substring(0, maxLength - 3) + '...';
+  }
+  return text;
+};
+
   return (
     <div className="bg-white  w-[100%] py-12 sm:px-8 lg:px-8 ">
     <div className="sm:px-4  ">
@@ -131,11 +138,11 @@ useEffect(()=>{
                 </div>
                 <div className="text-left mt-6 tracking-wide">
                   <p className="text-lg font-semibold">
-                  {event.description}
+                 { truncateText(event.description,100) }
                   </p>
-                  <p className="text-md"  dangerouslySetInnerHTML={{ __html: event.content }}>
+                   {/* <p className="text-md"  dangerouslySetInnerHTML={{ __html: event.content }}> 
                   
-                  </p>
+                   </p> */}
                 </div>
                 </Link>
               </div>
