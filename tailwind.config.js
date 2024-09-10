@@ -10,6 +10,10 @@ export default {
         green: '#77C04F',
       },
     },
+    fontFamily:{
+      Mont :['Mont-Bold','sans-serif'],
+      MontBook:['Mont-Book','sans-serif']
+    }
   },
   plugins: [],
 }

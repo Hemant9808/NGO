@@ -53,7 +53,7 @@ import axios, { AxiosResponse } from 'axios';
 
 
 
-// type BlogPost = {
+// type event = {
 //   _id: string;
 //   title: string;
 //   description: string;
@@ -69,24 +69,24 @@ const Blog = () => {
   const shouldAnimate = window.innerWidth <= 768;
 
   
-  const [blogPosts, setBlogPosts] = useState<any[]>([]);
+  const [events, setevents] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
   const itemsPerPage = 5;
 
   useEffect(() => {
-    const fetchBlogPosts = async () => {
+    const fetchevents = async () => {
       try {
         const response: AxiosResponse<any> = await axios.get('https://ngo-backend-u2dt.onrender.com/getAllPost');
-        setBlogPosts(response.data.sort((a:any, b:any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()));
+        setevents(response.data.sort((a:any, b:any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()));
       } catch (error) {
         console.error('Error fetching blog posts:', error);
       } finally {
         setLoading(false);
       }
     };
-    fetchBlogPosts();
+    fetchevents();
   }, []);
 
   const handlePageChange = useCallback((page: number) => {
@@ -94,11 +94,11 @@ const Blog = () => {
   }, []);
 
   const filteredPosts = useMemo(() => {
-    return blogPosts.filter(post => {
+    return events.filter(post => {
       return post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         post.description.toLowerCase().includes(searchQuery.toLowerCase());
     });
-  }, [blogPosts, searchQuery]);
+  }, [events, searchQuery]);
 
   const pageCount = useMemo(() => Math.ceil(filteredPosts.length / itemsPerPage), [filteredPosts.length]);
   const paginatedPosts = useMemo(() => filteredPosts.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage), [filteredPosts, currentPage, itemsPerPage]);
@@ -113,7 +113,7 @@ const Blog = () => {
     // return <div className='w-full h-screen flex justify-center items-center'><img className='w-8' src={loader} alt="" /></div>;
   }
 
-  if (!blogPosts.length) {
+  if (!events.length) {
     return <div>No posts found</div>;
   }
   
@@ -121,7 +121,7 @@ const Blog = () => {
   return (
     <div className="relative w-screen  flex justify-center shadow-md " >
       {/* <img className="absolute opacity-20 -z-1 object-cover w-full h-full -z-0" src={blogbg} alt="background" /> */}
-      <div className=" w-[60%] p-5 z-[5] max-w-[1300px] flex flex-col justify-center mt-[17vh] ">
+      <div className=" lg:w-[60%] md:w-[80%] w-[95%] p-5 z-[5] flex flex-col justify-center md:mt-[17vh] ">
         <div className="mb-6 md:flex justify-between items-center">
           <h1 data-aos={shouldAnimate ? 'slide-right' : ''} className="text-[clamp(35px,3.5vw,5rem)] font-Mont font-bold">
             Latest<span className="text-blue-900 ml-3">Events</span>
@@ -152,13 +152,13 @@ const Blog = () => {
           {paginatedPosts.map((post: any) => (
             <div key={post._id} className="flex flex-col md:flex-row gap-6">
               <div className="flex-shrink-0 md:w-2/5">
-                <Link to={`/blogpost/${post._id}`}>
+                <Link to={`/event/${post._id}`}>
                   <img src={post.imageUrl} alt={post.title} className="rounded-lg object-cover w-[400px] " />
                 </Link>
               </div>
               <div className="flex flex-col flex-grow">
                 <h2 className="text-lg font-semibold text-black mb-2">
-                  <Link to={`/blogpost/${post._id}`} className="hover:text-blue-900">
+                  <Link to={`/event/${post._id}`} className="hover:text-blue-900">
                     {post.title}
                   </Link>
                 </h2>
