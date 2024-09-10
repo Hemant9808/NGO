@@ -7,12 +7,17 @@ import Slider from "react-slick";
 const StoriesCarousel = () => {
  
   const stories = [
-    { id: 1, content: "Story 1", src: "../assets/story_1.png" },
-    { id: 2, content: "Story 2", src: "../assets/story_2.png" },
-    { id: 3, content: "Story 3", src: "../assets/story_3.png" },
-    { id: 4, content: "Story 4", src: "../assets/story_1.png" },
-    { id: 5, content: "Story 5", src: "../assets/story_2.png" },
-    { id: 6, content: "Story 6", src: "../assets/story_3.png" },
+    { id: 1, content: "Story 1", src: "../assets/story1.jpg" },
+    { id: 2, content: "Story 2", src: "../assets/story2.jpg" },
+    { id: 3, content: "Story 3", src: "../assets/story3.jpg" },
+    { id: 4, content: "Story 4", src: "../assets/story4.jpg" },
+    { id: 5, content: "Story 5", src: "../assets/story5.jpg" },
+    { id: 6, content: "Story 6", src: "../assets/story6.jpg" },
+    { id: 7, content: "Story 1", src: "../assets/story7.jpg" },
+    { id: 8, content: "Story 2", src: "../assets/story8.jpg" },
+    { id: 9, content: "Story 3", src: "../assets/story9.jpg" },
+    { id: 10, content: "Story 4", src: "../assets/story10.jpg" },
+    { id: 11, content: "Story 5", src: "../assets/story11.jpg" },
   ];
 
 

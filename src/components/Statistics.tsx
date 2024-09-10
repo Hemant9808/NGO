@@ -24,7 +24,7 @@ const ImpactSummary = () => {
           </div>
           <div>
             <h1 className="text-6xl lg:text-8xl font-normal text-green"><NumberTicker className='' value={25 || 0} />+</h1>
-            <h1 className="text-4xl font-medium text-green">STATES</h1>
+            <h1 className="text-4xl font-medium text-green">CITIES</h1>
             {/* <p className="mt-2 text-black text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </div>
         </div>
