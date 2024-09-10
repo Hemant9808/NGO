@@ -6,7 +6,7 @@ function Campaigns() {
 
   return (
     <div className="flex flex-col">
-      <OurCampaigns />
+      {/* <OurCampaigns /> */}
       <OurCampaignsBlog />
       <Footer />
     </div>
