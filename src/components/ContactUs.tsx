@@ -14,7 +14,7 @@ function ContactUs() {
             Join Us in Making a <span className="text-green">Difference</span>
           </h1>
           <p className="text-[#979595] text-base sm:text-lg md:text-xl text-justify">
-            Join the Rabindranath Institute of Healthcare Management to bring
+            Join the Rabindranath Healthcare Management Foundation to bring
             vital healthcare, education, and support to remote communities.
             Together, we can empower and uplift lives for a brighter future.
           </p>

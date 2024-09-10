@@ -1,22 +1,24 @@
 
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 const StoriesCarousel = () => {
-  const stories = [
-    { id: 1, content: "Story 1" },
-    { id: 2, content: "Story 2" },
-    { id: 3, content: "Story 3" },
-    { id: 4, content: "Story 4" },
-    { id: 5, content: "Story 5" },
-    { id: 6, content: "Story 6" },
-  ];
+  // const stories = [
+  //   { id: 1, content: "Story 1" },
+  //   { id: 2, content: "Story 2" },
+  //   { id: 3, content: "Story 3" },
+  //   { id: 4, content: "Story 4" },
+  //   { id: 5, content: "Story 5" },
+  //   { id: 6, content: "Story 6" },
+  // ];
 
 
 
@@ -65,21 +67,49 @@ const StoriesCarousel = () => {
     }
   };
 
+  const [events,setEvents] = useState<any>();
+  const [loading,setLoading]= useState<boolean>();
+console.log(loading);
+
+  const fetchEvents = async () => {
+    try {
+      const response = await axios.get(`https://ngo-backend-u2dt.onrender.com/getAllPost`, {  
+      });
+      console.log(response);
+      
+       setEvents(response.data);
+      console.log("events",events);
+      
+    } catch (error) {
+      console.error("Error fetching blog post:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  console.log("events",events);
+useEffect(()=>{
+  fetchEvents();
+},[])
 
   return (
     <div className="bg-white  w-[100%] py-12 sm:px-8 lg:px-8 ">
     <div className="sm:px-4  ">
       <div className="  text-center">
         <h2 className="text-5xl lg:text-7xl font-normal">
-          OUR <span className="text-green">TESTIMONIALS</span>
+          OUR <span className="text-green">CAMPAIGNS</span>
         </h2>
         <div className="mt-16  relative ">
         <Slider ref={sliderRef} {...settings}>
-      {stories.map((story) => (
+      {events?.map((event:any) => (
                 <div
-                key={story.id}
+                key={event._id}
                 className="flex-shrink-0 w-[90%]  sm:w-1/3 sm:min-w-[24rem] h-48 lg:h-60 p-4 lg:p-8 rounded-[1rem] bg-[#363636]  text-white  mx-2"
               >
+                 <Link to={`/event/${event._id}`}>
+                 
+                
+
+
                 <div className="flex gap-4">
                   <div className="w-[4rem] h-[4rem] rounded-full bg-gray-400">
                     <img
@@ -99,12 +129,15 @@ const StoriesCarousel = () => {
                     />
                   </div>
                 </div>
-                <div className="text-left mt-12 tracking-wide">
-                  <p>
-                    Sherl said : Journeying through the world, Chillhum
-                    always with me.
+                <div className="text-left mt-6 tracking-wide">
+                  <p className="text-lg font-semibold">
+                  {event.description}
+                  </p>
+                  <p className="text-md"  dangerouslySetInnerHTML={{ __html: event.content }}>
+                  
                   </p>
                 </div>
+                </Link>
               </div>
               ))}
       </Slider>

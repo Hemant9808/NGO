@@ -8,7 +8,7 @@ const AboutUs = () => {
               WHO ARE <span className="text-green">WE?</span>
             </h2>
             <p className="mt-8 lg:mt-16 text-xl">
-              The Rabindranath Institute of Healthcare Management is committed
+              The Rabindranath Healthcare Management Foundation is committed
               to improving the lives of people in remote areas. We provide
               essential healthcare, education, and social services to
               underserved communities. Our goal is to help these communities
@@ -64,16 +64,16 @@ const AboutUs = () => {
 
                   {/* About Us 2 */}
                   <div className="w-full h-[25vh] sm:h-[30vh]">
-                    <img
-                      src="../assets/aboutus_2.png"
-                      alt="about"
-                      className="w-full h-full object-none"
-                    />
-                  </div>
+  <img
+    src="../assets/team3.jpg"
+    alt="about"
+    className="w-full h-full object-cover"
+  />
+</div>
                 </div>
 
 
-                <div className="flex-1 sm:mt-8 md:mt-16 sm:min-w-[400px] min-w-[300px] flex flex-col h-screen sm:h-auto">
+                <div className="flex-1 py-8 sm:mt-8 md:mt-16 sm:min-w-[400px] min-w-[300px] flex flex-col h-screen sm:h-auto">
 
                   {/* About Us 3 */}
                   <div className="w-full h-[25vh] sm:h-[30vh] mb-12">

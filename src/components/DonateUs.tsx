@@ -50,9 +50,9 @@ function DonateUs() {
       </div>
 
       {/* Card Details */}
-      <div className="flex flex-col lg:flex-row justify-center items-center bg-[#EBEBEB] mx-auto p-4 sm:p-8 shadow-md rounded">
+      <div className="flex flex-col lg:flex-row justify-center sm:gap-[5rem] items-center bg-[#EBEBEB] mx-auto p-4 sm:p-8 shadow-md rounded">
         {/* Left */}
-        <div className="lg:w-1/2 text-left">
+        <div className="text-left">
           <h1 className="text-2xl font-semibold">Card Details</h1>
           <p className="text-sm text-[#888888] uppercase">(Required)</p>
           <div className="flex flex-col w-full sm:w-96 mt-5">
@@ -85,19 +85,21 @@ function DonateUs() {
               Save my card for future payments
             </label>
           </div>
-        </div>
 
-        <div className="w-[1px] bg-gray-400 h-52 hidden lg:block"></div>
+          
+
+        </div>
+        <div className="w-[1px]  bg-gray-400 h-52 hidden lg:block"></div>
 
         {/* Right */}
-        <div className="lg:w-1/2 text-left mt-5 lg:mt-0">
-          <div className="lg:w-[80%] md:gap-[18rem]">
+        <div className=" text-left mt-5 lg:mt-0">
+          <div className="lg:w-[80%] md:gap-[rem]">
           <div>
             <h1 className="text-2xl font-semibold">Enter your Email Address</h1>
             <p className="text-sm text-[#888888] uppercase">(Required)</p>
             <form
               action=""
-              className="flex flex-col w-full sm:w-96 my-5 lg:my-8"
+              className="flex flex-col w-full sm:w-96 my-5 lg:my-"
             >
               <input
                 type="Email "
@@ -108,9 +110,9 @@ function DonateUs() {
             </form>
           </div>
           
-          <div className="flex flex-col items-start mt-2 mb-8">
+          <div className="flex flex-col items-start mt-2 mb-3">
             <h1 className="text-xl md:text-3xl font-semibold">Gift Card</h1>
-            <div className="flex my-3 sm:w-96">
+            <div className="flex my- sm:w-96">
             <input type="checkbox" id="giftCard" className="h-5 w-5" />
             <label htmlFor="giftCard" className="ml-2 text-lg text-[#8B8B8B]">
               Gift with a purpose—send a gift card along with a donation to make
@@ -120,11 +122,11 @@ function DonateUs() {
           </div>
 
           {/* Payment button */}
-          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
-            <button className="text-base lg:text-lg border-2 border-[#D9D9D9] hover:border-green text-black hover:text-white bg-[#D9D9D9] hover:bg-green px-5 lg:px-6 py-2 rounded-lg uppercase font-semibold">
+          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-2">
+            <button className="text-base lg:text-md border-2 border-[#D9D9D9] hover:border-green text-black hover:text-white bg-[#D9D9D9] hover:bg-green px-3 py-2 rounded-lg uppercase font-semibold">
               Cancel Payment
             </button>
-            <button className="text-base lg:text-lg border-2 border-green hover:border-[#D9D9D9] text-white hover:text-black bg-green hover:bg-[#D9D9D9] px-14 lg:px-6 py-2 rounded-lg uppercase font-semibold">
+            <button className="text-base lg:text-md border-2 border-green hover:border-[#D9D9D9] text-white hover:text-black bg-green hover:bg-[#D9D9D9] px-14 lg:px-6 py-2 rounded-lg uppercase font-semibold">
               Pay Now
             </button>
           </div>

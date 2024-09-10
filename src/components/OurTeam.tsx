@@ -27,7 +27,7 @@ function OurTeam() {
   return (
     <div
       className="min-h-[85vh] m-4 sm:m-12"
-      style={{ backgroundImage: `url("../assets/background.png")` }}
+      
     >
       <div className="text-center">
         <h1 className="text-5xl lg:text-7xl py-12 lg:py-8">

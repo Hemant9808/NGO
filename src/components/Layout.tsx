@@ -21,7 +21,7 @@ const Layout = () => {
 
   const menuItems = [
     { text: "HOME", href: "/" },
-    { text: "OUR TEAM", href: "/team" },
+    // { text: "OUR TEAM", href: "/team" },
     { text: "CAMPAIGNS", href: "/campaigns" },
     { text: "CONTACT", href: "/contact" },
   ];
