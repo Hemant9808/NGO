@@ -70,7 +70,7 @@ const StoriesCarousel = () => {
       <div className="sm:px-4">
         <div className=" mx-auto text-center">
           <h2 className="text-5xl lg:text-7xl font-normal">
-            OUR <span className="text-green">STORIES</span>
+            OUR <span className="text-green">GALLERY</span>
           </h2>
           <div className="mt-16 relative">
           <Slider ref={sliderRef} {...settings}>
