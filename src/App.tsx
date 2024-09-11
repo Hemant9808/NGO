@@ -7,6 +7,8 @@ import Campaigns from "./pages/Campaigns.tsx";
 import Contact from "./pages/Contact.tsx";
 import Donate from "./pages/Donate.tsx";
 import Event from "./pages/Event.tsx";
+import TermsAndConditions from "./pages/TermsAndConditions.tsx";
+import PrivacyPolicy from "./pages/Privacy.tsx";
 
 function App() {
   return (
@@ -19,6 +21,10 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="donate" element={<Donate />} />
           <Route path="event/:id" element={<Event/>} />
+          <Route path="/TermsAndConditions" element={<TermsAndConditions/>} />
+
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
+
         </Route>
       </Routes>
     </Router>

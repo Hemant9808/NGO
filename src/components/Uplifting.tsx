@@ -22,7 +22,7 @@ const UpliftingLives = () => {
             TRANSFORMING <span className="text-green">LIVES</span>
           </h2>
           <p className="mt-6 text-xl">
-            At Rabindranath Healthcare Management Foundation, we ensure
+            At Rabindranath HM Foundation , we ensure
             everyone in remote areas gets vital healthcare, education, and
             social support. We believe every individual should have basic
             healthcare facilities and access to education. We aim to bring

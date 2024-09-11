@@ -28,16 +28,18 @@ const Footer = () => {
             <h3 className="text-3xl font-semibold mb-4 md:mb-8">Connect</h3>
             <ul className="text-xl">
               <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <Link to='/contact'>
+    
                   Reach Us
-                </a>
+              
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Twitter
+                <a href="https://www.facebook.com/rihm.jharkhand/" className="hover:underline">
+                 Facebook
                 </a>
               </li>
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <a href="#" className="hover:underline">
                   LinkedIn
                 </a>
@@ -46,7 +48,7 @@ const Footer = () => {
                 <a href="#" className="hover:underline">
                   Instagram
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
@@ -62,22 +64,27 @@ const Footer = () => {
                   Campaigns
                 </a>
               </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
+              <li className="mb-2 hover:underline ">
+              <Link to='/TermsAndConditions'>
                   Terms & Conditions
-                </a>
+                  </Link>
               </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
+              <li className="mb-2 hover:underline">
+                <Link to='/PrivacyPolicy'>
+                  Privacy policies
+                </Link>
+              </li>
+              <li className="mb-2 hover:underline">
+                <Link to='/'>
                   Affiliated Partners
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="border-t border-white mt-8 px-4 pt-4 text-center">
-        <p>© 2024 iTraction. All rights reserved.</p>
+        <p>© 2024 Rabindranath HM Foundation. All rights reserved.</p>
       </div>
     </footer>
   );

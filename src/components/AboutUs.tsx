@@ -8,8 +8,7 @@ const AboutUs = () => {
               WHO ARE <span className="text-green">WE?</span>
             </h2>
             <p className="mt-8 lg:mt-16 text-xl">
-              The Rabindranath Healthcare Management Foundation is committed
-              to improving the lives of people in remote areas. We provide
+              The Rabindranath HM Foundation is committed to improving the lives of people in remote areas. We provide
               essential healthcare, education, and social services to
               underserved communities. Our goal is to help these communities
               grow, thrive, and become self-sufficient. By offering these vital
