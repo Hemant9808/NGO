@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-white mt-8 px-4 pt-4 text-center">
-        <p>© 2024 Rabindranath HM Foundation. All rights reserved.</p>
+        <p>© 2024 Rabindranath HM Foundation. All rights reserved. No Refund Policy Needed.</p>
       </div>
     </footer>
   );
