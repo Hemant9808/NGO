@@ -54,11 +54,7 @@ const Footer = () => {
           <div>
             <h3 className="text-3xl font-semibold mb-4 md:mb-8">Company</h3>
             <ul className="text-xl">
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Blogs
-                </a>
-              </li>
+             
               <li className="mb-2">
                 <a href="#" className="hover:underline">
                   Campaigns
@@ -75,6 +71,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="mb-2 hover:underline">
+                <Link to='/PrivacyPolicy'>
+                  Refund Policy
+                </Link>
+              </li>
+              <li className="mb-2 hover:underline">
                 <Link to='/'>
                   Affiliated Partners
                 </Link>
@@ -84,7 +85,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-white mt-8 px-4 pt-4 text-center">
-        <p>© 2024 Rabindranath HM Foundation. All rights reserved. No Refund Policy Needed.</p>
+        <p>© 2024 Rabindranath HM Foundation. All rights reserved.</p>
       </div>
     </footer>
   );
